@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: dementia-compass
+
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  datasource:
+    url: jdbc:h2:mem:test
+#  jpa:
+#    show-sql: true
+  hibernate:
+    ddl-auto: true
+server:
+  port: 9999
+
+
+#spring.h2.console.enabled= true
+#spring.datasource.url= jdbc:h2:mem:test
+#spring.h2.console.settings.web-allow-others=true
+## To show the hibernate queries run by spring boot while creating the tables etc
+#spring.jpa.show-sql= true
+## To create and drop the tables and schema every time the application starts
+#spring.hibernate.ddl-auto= create-drop
